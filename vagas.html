@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vagas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .expanded .extra {
+      max-height: 200px !important;
+      padding-top: 0.5rem;
+    }
+    .extra {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out, padding 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-indigo-800 text-white p-4 text-center text-xl font-semibold">
+    💼 Vagas
+  </header>
+
+  <main class="p-4 space-y-4 pb-24">
+    <!-- Reutilizável: modelo base -->
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Front-End React</h2>
+      <p class="text-sm text-gray-600">Empresa: CodeWave</p>
+      <p class="text-sm text-gray-600">Local: Remoto</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> React, Tailwind, Git</p>
+        <p class="text-sm text-gray-700"><strong>Benefícios:</strong> Bolsa R$1200, Horário Flexível</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> contato@codewave.com</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Suporte Técnico</h2>
+      <p class="text-sm text-gray-600">Empresa: Inatel</p>
+      <p class="text-sm text-gray-600">Local: Presencial</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Redes, Atendimento</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> suporte@inatel.br</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Back-End NodeJS</h2>
+      <p class="text-sm text-gray-600">Empresa: DevCorp</p>
+      <p class="text-sm text-gray-600">Local: Híbrido</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Node.js, PostgreSQL</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> vagas@devcorp.io</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Design UI/UX</h2>
+      <p class="text-sm text-gray-600">Empresa: PixelLab</p>
+      <p class="text-sm text-gray-600">Local: Remoto</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Figma, Noção de UX</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> rh@pixellab.com</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Suporte HelpDesk</h2>
+      <p class="text-sm text-gray-600">Empresa: ConectaTI</p>
+      <p class="text-sm text-gray-600">Local: Presencial</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Windows, Atendimento, Redes</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> conectati@empresa.com</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Jovem Aprendiz - TI</h2>
+      <p class="text-sm text-gray-600">Empresa: InfoStart</p>
+      <p class="text-sm text-gray-600">Local: Santa Rita</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Informática básica</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> contato@infostart.com</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - QA Tester</h2>
+      <p class="text-sm text-gray-600">Empresa: QualityTech</p>
+      <p class="text-sm text-gray-600">Local: Remoto</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Cypress, Jest</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> rh@qualitytech.com</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Ciência de Dados</h2>
+      <p class="text-sm text-gray-600">Empresa: SmartData</p>
+      <p class="text-sm text-gray-600">Local: Remoto</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Python, Pandas, SQL</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> dados@smartdata.io</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - DevOps</h2>
+      <p class="text-sm text-gray-600">Empresa: DeployNow</p>
+      <p class="text-sm text-gray-600">Local: Híbrido</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Docker, CI/CD</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> devops@deploynow.dev</p>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow p-4 cursor-pointer transition hover:shadow-md expandable">
+      <h2 class="text-lg font-bold text-indigo-800">Estágio - Segurança da Informação</h2>
+      <p class="text-sm text-gray-600">Empresa: CyberSafe</p>
+      <p class="text-sm text-gray-600">Local: Remoto</p>
+      <div class="extra">
+        <p class="text-sm text-gray-700"><strong>Requisitos:</strong> Análise de vulnerabilidades, redes</p>
+        <p class="text-sm text-gray-700"><strong>Contato:</strong> vagas@cybersafe.com.br</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="fixed bottom-0 w-full bg-white border-t flex justify-around items-center py-2 text-sm text-gray-500">
+    <a href="index.html" class="flex flex-col items-center">
+      <span class="text-lg">🏠</span> Início
+    </a>
+    <a href="documentos.html" class="flex flex-col items-center">
+      <span class="text-lg">📄</span> Documentos
+    </a>
+    <a href="vagas.html" class="flex flex-col items-center text-indigo-700 font-bold">
+      <span class="text-lg">💼</span> Vagas
+    </a>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.expandable').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('expanded');
+      });
+    });
+  </script>
+</body>
+</html>
